@@ -1,0 +1,565 @@
+/*!
+ * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Fonts-Gotham */
+/*******************************/
+@font-face {
+    font-family: gotham-black-italic;
+    src: url(../fonts/GOTHAM-BLACKITALIC.TTF);
+}
+
+@font-face {
+    font-family: gotham-black;
+    src: url(../fonts/GOTHAM-BLACK.TTF);
+}
+
+@font-face {
+    font-family: gotham-thin;
+    src: url(../fonts/GOTHAM-THIN.TTF);
+}
+/*******************************/
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: gotham-black,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #fff;
+    background:#303030;
+}
+html {
+    width: 100%;
+    max-width:100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+@media(min-width:768px) {
+    p {
+        margin: 0 0 35px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
+
+a {
+    color: #42dca3;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #1d9b6c;
+}
+
+.fa-10x {
+    font-size: 10em!important;
+}
+
+.light {
+    font-weight: 400;
+}
+
+.gotham-thin {
+    font-family: gotham-thin;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #fff;
+}
+
+.display-none {
+    display:none;
+}
+
+#logo-upper {
+    width: 45%;
+}
+
+#logo-lower {
+    width: 45%;
+}
+
+#nav-logo-the {
+    font-family: gotham-thin;
+    font-size: 0.75em;
+}
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    background-color: #000;
+    max-width: 100%;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-custom a {
+    color: #fff;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    color: rgba(255,255,255,.8);
+    background-color: transparent;
+    border-bottom: solid 2px white;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+
+.navbar-custom .nav li.active a {
+    background-color: #3D5080;
+}
+
+.navbar-custom .nav li.active a:hover {
+    color: #fff;
+}
+
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    /*background: #000 url(../img/TMD_Gradient_2.png) no-repeat top center;*/
+    background: #001848; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#001848, #000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#001848, #000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#001848, #000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#001848, #000); /* Standard syntax */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro .intro-body .brand-heading {
+    font-size: 40px;
+}
+
+.intro .intro-body .intro-text {
+    font-size: 18px;
+}
+
+section#about {
+    /*background: #3D5080 url(../img/TMD_Gradient_2_Flipped.png) no-repeat top center;*/
+    background: #000; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#000, #001848); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#000, #001848); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#000, #001848); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#000, #001848); /* Standard syntax */
+}
+
+section#advertisement {
+    background: #001848; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#001848, #303030); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#001848, #303030); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#001848, #303030); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#001848, #303030); /* Standard syntax */
+}
+
+section#marketing {
+    background: #303030; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#303030, #001848); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#303030 #001848); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#303030, #001848); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#303030, #001848); /* Standard syntax */
+}
+
+section#digital-communication {
+    background: #001848; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#001848, #303030); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#001848, #303030); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#001848, #303030); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#001848, #303030); /* Standard syntax */
+}
+
+section#contact {
+    background: #303030; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#303030, #001848); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#303030 #001848); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#303030, #001848); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#303030, #001848); /* Standard syntax */
+}
+
+#contact-title {
+    border-bottom: 1px solid #fff;
+    font-size: 2.0em;
+}
+
+.contact-info {
+    border-right: 1px solid #fff;
+}
+
+.ad-row {
+    background-color: #FFFFFF;
+    border-top: solid 10px #3D5080;
+    color: #001848;
+    width: 80%;
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 100%!important;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {    
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {    
+    0% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.content-section {
+    padding: 80px 10px;
+}
+
+.content-section.row {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.content-title {
+    background-color: black;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.top-content-row {
+    margin-top: 20px;
+}
+
+.download-section {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.btn {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    border: 1px solid #42dca3;
+    color: #42dca3;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #42dca3;
+    outline: 0;
+    color: #000;
+    background-color: #42dca3;
+}
+
+ul.banner-social-buttons {
+    margin-top: 0;
+}
+
+.social-link {
+    width:30%;
+}
+
+footer {
+    background-color: #000000;
+    padding: 50px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+::selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+@media(min-width:767px) {
+    .content-section {
+        padding-top: 150px;
+    }
+
+    .download-section {
+        padding: 100px 0;
+    }
+
+    .title-row {
+        height: 69px;
+    }
+}
+
+@media(min-width:768px) {
+    .navbar-custom {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        background: #000;
+    }
+    
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .intro .intro-body .brand-heading {
+        font-size: 100px;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 26px;
+    }
+}
+
+.f1_container {
+  position: relative;
+  margin: 10px auto;
+  height: 300px;
+  z-index: 1;
+}
+.f1_container {
+  perspective: 1000;
+}
+#f1_card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;
+}
+.f1_container:hover #f1_card {
+    transform: rotateY(180deg);
+    width: 100%;
+}
+.f1_container:hover #f1_card .face.back {
+    transition: opacity 0.5s linear;
+    opacity: 1;
+}
+.f1_container:hover #f1_card .face.front {
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.face.back {
+    display: block;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+.face.back.left {
+    display: block;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+.face.back.right {
+    display: block;
+    transform: rotateY(-180deg);
+    box-sizing: border-box;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.back.face p {
+    font-family: gotham-thin;
+    margin: 0 50px;
+    border-top: 1px solid #fff;
+}
+
+.flip-btn {
+    border: 1px solid #fff;
+}
+
+.social-icons {
+    margin: 0;
+}
+
+#broadcast-container {
+    height: 300px;
+}
+
+#radio-container {
+    height: 300px;
+}
+
+@media(max-width: 640px) {
+    #radio-container:hover {
+        height: 400px;
+    }
+}
