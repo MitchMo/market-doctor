@@ -1,16 +1,16 @@
-
 $(window).load(function() {
     if($(window).width() < 768)
     {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-        $(".navbar-brand").removeClass("display-none");
-        $(".navbar-nav").removeClass("display-none");
+        //$(".navbar-fixed-top").addClass("top-nav-collapse");
+        //$(".navbar-brand").removeClass("display-none");
+        //$(".navbar-nav").removeClass("display-none");
 
         $('#advertising-title').removeClass('hide');
         $('#marketing-title').removeClass('hide');
         $('#digital-title').removeClass('hide');
     }
 });
+
 
 // jQuery to collapse the navbar on scroll
 function collapseNavbar() {
@@ -27,40 +27,42 @@ function collapseNavbar() {
 
 $(window).scroll(function() {
 
-    console.log($(window).width());
+    //console.log($(window).width());
 
     if($(window).width() > 760)
     {
-        collapseNavbar();
+        //collapseNavbar();
 
-        var scroll = $(window).scrollTop(); 
+        var scroll = $(window).scrollTop();
         if(scroll < 944)
         {
             $('#advertising-title').removeClass('animated fadeInLeft').addClass('animated fadeOutLeft');
             $('#marketing-title').removeClass('animated fadeInRight').addClass('animated fadeOutRight');
             $('#digital-title').removeClass('animated fadeInLeft').addClass('animated fadeOutLeft');
-        } 
+        }
         if(scroll >= 944 && scroll <= 2165)
+        {
+            $('#digital-title').removeClass('animated fadeOutLeft hide').addClass('animated fadeInLeft');
+            $('#marketing-title').removeClass('animated fadeInRight').addClass('animated fadeOutRight');
+            $('#advertising-title').removeClass('animated fadeInLeft').addClass('animated fadeOutLeft');
+
+        }
+        else if(scroll >= 2166 && scroll <= 2935)
         {
             $('#advertising-title').removeClass('animated fadeOutLeft hide').addClass('animated fadeInLeft');
             $('#marketing-title').removeClass('animated fadeInRight').addClass('animated fadeOutRight');
             $('#digital-title').removeClass('animated fadeInLeft').addClass('animated fadeOutLeft');
-        }  
-        else if(scroll >= 2166 && scroll <= 2935)
-        {
+        }
+        else if(scroll >= 2936 && scroll <= 4156) {
             $('#marketing-title').removeClass('animated fadeOutRight hide').addClass('animated fadeInRight');
             $('#advertising-title').removeClass('animated fadeInLeft').addClass('animated fadeOutLeft');
             $('#digital-title').removeClass('animated fadeInLeft').addClass('animated fadeOutLeft');
-        }
-        else if(scroll >= 2936 && scroll <= 4156) {
-            $('#digital-title').removeClass('animated fadeOutLeft hide').addClass('animated fadeInLeft');
-            $('#marketing-title').removeClass('animated fadeInRight').addClass('animated fadeOutRight');
-            $('#advertising-title').removeClass('animated fadeInLeft').addClass('animated fadeOutLeft');
+
         }
     }
 });
 
-$(document).ready(collapseNavbar);
+//$(document).ready(collapseNavbar);
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
