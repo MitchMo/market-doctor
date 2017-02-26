@@ -1,5 +1,5 @@
 $(window).load(function() {
-    if($(window).width() <= 800)
+    if(screen.width <= 768)
     {
         //$(".navbar-fixed-top").addClass("top-nav-collapse");
         //$(".navbar-brand").removeClass("display-none");
@@ -29,7 +29,7 @@ $(window).scroll(function() {
 
     //console.log($(window).width());
 
-    if($(window).width() > 760)
+    if(screen.width > 760)
     {
         //collapseNavbar();
 
@@ -53,7 +53,8 @@ $(window).scroll(function() {
             $('#marketing-title').removeClass('animated fadeInRight').addClass('animated fadeOutRight');
             $('#digital-title').removeClass('animated fadeInLeft').addClass('animated fadeOutLeft');
         }
-        else if(scroll >= 2936 && scroll <= 4156) {
+        else if(scroll >= 2936 && scroll <= 4156)
+        {
             $('#marketing-title').removeClass('animated fadeOutRight hide').addClass('animated fadeInRight');
             $('#advertising-title').removeClass('animated fadeInLeft').addClass('animated fadeOutLeft');
             $('#digital-title').removeClass('animated fadeInLeft').addClass('animated fadeOutLeft');
