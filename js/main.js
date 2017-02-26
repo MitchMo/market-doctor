@@ -1,10 +1,6 @@
 $(window).load(function() {
     if(screen.width <= 768)
     {
-        //$(".navbar-fixed-top").addClass("top-nav-collapse");
-        //$(".navbar-brand").removeClass("display-none");
-        //$(".navbar-nav").removeClass("display-none");
-
         $('#advertising-title').removeClass('hide');
         $('#marketing-title').removeClass('hide');
         $('#digital-title').removeClass('hide');
@@ -29,7 +25,7 @@ $(window).scroll(function() {
 
     //console.log($(window).width());
 
-    if(screen.width > 760)
+    if(screen.width > 768)
     {
         //collapseNavbar();
 
