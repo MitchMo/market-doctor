@@ -1,5 +1,5 @@
 $(window).load(function() {
-    if($(window).width() < 768)
+    if($(window).width() <= 768)
     {
         //$(".navbar-fixed-top").addClass("top-nav-collapse");
         //$(".navbar-brand").removeClass("display-none");
